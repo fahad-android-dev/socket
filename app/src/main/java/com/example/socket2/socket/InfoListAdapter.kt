@@ -28,10 +28,10 @@ class InfoListAdapter(): RecyclerView.Adapter<InfoListAdapter.MyViewHolder>() {
 
         val a = arrProductList[position]
 
-        holder.binding.txtName.text = a.name
-        holder.binding.txtAge.text = a.age
-        holder.binding.txtSalary.text = a.salary
-        holder.binding.txtDesignation.text = a.designation
+        holder.binding.txtName.text = "Name : ${a.name}"
+        holder.binding.txtAge.text = "Age : ${a.age}"
+        holder.binding.txtSalary.text = "Salary : ${a.salary}"
+        holder.binding.txtDesignation.text = "Designation : ${a.designation}"
 
         holder.binding.rootLayout.setOnClickListener {
             onClickEvent?.onItemClick("itemClicked",position)
